@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="app.js"></script> 
+</head>
+<body>
+    <header>
+
+    </header>
+    <h1 id="apresentacao">Olá, seja bem vindo ao nosso cadastro de usuário</h1>
+    <section class="cadastro">
+        <h2>Cadastra-se Aqui</h2>
+
+        <form method="post">
+
+            <!-- Nome Completo -->
+            <div class="campo_cadastro">
+                <input type="text" name="name" placeholder="Nome" required>
+            </div>
+
+            <!-- CPF -->
+            <div class="campo_cadastro">
+                <input type="text" name="CPF" id="cpf" placeholder="CPF" autocomplete="off" maxlength="14" onkeyup="mascara_cpf()" required>
+            </div>
+
+            <!-- Telefone / Celular -->
+            <div class="campo_cadastro">
+                <input type="tel" name="Celular" placeholder="Celular" required>
+            </div>
+
+            <!-- E-mail -->
+            <div class="campo_cadastro">
+                <input type="email" name="E-mail" placeholder="E-mail" required>
+            </div>
+
+            <!-- Data de Nascimento -->
+            <div class="campo_cadastro">
+                <p id="data_nascimento">Data de Nascimento</p>
+                <input type="date" name="Data" placeholder="Data de Nascimento" required>
+            </div>
+            <div class="btn_enviar-div">
+                <button class="btn_enviar" type="submit">Enviar</button>
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>
